@@ -2,33 +2,33 @@ package com.company;
 
 public class Mercedes extends Cars {
 
-    private String owner;
-    private int year;
+    private String pilot;
+    private double lapTime;
 
-    public Mercedes(String model, String color, double volune, String owner, int year) {
+    public Mercedes(String model, String color, double volune, String pilot, double lapTime) {
         super(model, color, volune);
-        this.owner = owner;
-        this.year = year;
+        this.pilot = pilot;
+        this.lapTime= lapTime;
     }
 
-    public String getOwner() {
-        return owner;
+    public String getPilot() {
+        return pilot;
     }
 
-    public void setOwner(String owner) {
-        this.owner = owner;
+    public void setPilot(String pilot) {
+        this.pilot = pilot;
     }
 
-    public int getYear() {
-        return year;
+    public double getLapTime() {
+        return lapTime;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setLapTime(double lapTime) {
+        this.lapTime = lapTime;
     }
 
     @Override
-    public String print() {
-        return (getModel()+ " " + getColor() + " " + " " + year + " " + getVolune() + " "+ owner);
+    public void print() {
+        return super.print();
     }
 }

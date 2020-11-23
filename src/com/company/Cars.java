@@ -39,4 +39,10 @@ public abstract class Cars implements Printable {
     public void setVolune(double volune) {
         this.volune = volune;
     }
+
+    @Override
+    public void print() {
+        return (getModel()+ " " + getColor() + " " +  " " + getVolune());
+    }
+
 }
