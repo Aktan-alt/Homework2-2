@@ -10,11 +10,9 @@ public class Audi extends Cars {
         this.owner = owner;
         this.state = state;
     }
-
     public String getState() {
         return state;
     }
-
     public void setState(String state) {
         this.state = state;
     }
@@ -26,9 +24,10 @@ public class Audi extends Cars {
     public void setOwner(String owner) {
         this.owner = owner;
     }
-
     @Override
     public void print() {
-        return super.print();
+        System.out.println(getModel() + " " + getVolune() + " " + getColor() + " " + owner + " " + state);
     }
+
+
 }

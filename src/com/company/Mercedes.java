@@ -29,6 +29,6 @@ public class Mercedes extends Cars {
 
     @Override
     public void print() {
-        return super.print();
+        System.out.println(getModel() + " " + getVolune() + " " + getColor() +" " + pilot + " " + lapTime);
     }
 }

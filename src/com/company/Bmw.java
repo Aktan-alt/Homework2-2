@@ -1,16 +1,16 @@
 package com.company;
 
 public class Bmw extends Cars {
-    private int speed;
+    private double speed;
     private int year;
 
-    public Bmw(String model, String color, double volune, int speed, int year) {
+    public Bmw(String model, String color, double volune, double speed, int year) {
         super(model, color, volune);
         this.speed = speed;
         this.year = year;
     }
 
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
@@ -26,9 +26,9 @@ public class Bmw extends Cars {
         this.year = year;
     }
 
-
     @Override
-    public void print() {
-        super.print();
+    public void print(){
+        System.out.println(getModel() + " " + getVolune() + " " + getColor() +" " + speed +" " + year);
     }
+
 }
